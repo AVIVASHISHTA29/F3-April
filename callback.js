@@ -19,6 +19,7 @@ sayHello(sayBye);
 
 // Problem Statement -> You own a restaurant, create a Restaurant System for your restaurant.
 
+// 1000 -> 1500 -> 2000 -> 3000 -> 0
 // Greet() -> takeOrder() -> giveFood() -> takePayment() -> Thankyou()
 // Greet() 'THEN' takeOrder() 'THEN' giveFood() 'THEN' takePayment() 'THEN' Thankyou()
 
