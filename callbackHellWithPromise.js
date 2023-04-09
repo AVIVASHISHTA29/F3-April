@@ -17,7 +17,7 @@ function takeOrder() {
 function givenFood() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("giveFood");
+      resolve({ data: "DATA", message: "MESSAGE", status: "OK" });
     }, 2000);
   });
 }
@@ -26,7 +26,10 @@ function takePayment() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       //   resolve("takePayment");
-      reject("Your card didnt work properly...");
+      reject({
+        functionNumber: 3,
+        message: "Your card didnt work properly...",
+      });
     }, 3000);
   });
 }
@@ -57,5 +60,11 @@ greet()
     thanks();
   })
   .catch((err) => {
+    if (err.functionNumber == 3) {
+      console.log(
+        "Function Take Payment is faulty , here is the message ->",
+        err.message
+      );
+    }
     console.log("sorry something is going wrong");
   });
