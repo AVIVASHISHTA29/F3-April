@@ -67,4 +67,5 @@ greet()
       );
     }
     console.log("sorry something is going wrong");
+    thanks();
   });
