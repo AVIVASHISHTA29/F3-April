@@ -53,12 +53,12 @@ backgroundMusic();
 // shop closing -> stopMusic();
 
 waitFnc()
-  .then((data1) => {
-    console.log(data1, new Date());
+  .then((response1) => {
+    console.log(response1, new Date());
     return getHaircut();
   })
-  .then((data2) => {
-    console.log(data2, new Date());
+  .then((data) => {
+    console.log(data, new Date());
     return pay();
   })
   .catch((err) => {
