@@ -16,4 +16,7 @@ fetch("https://dummyjson.com/products/1")
     console.log("DATA", data);
     // console.log(data.quote);
     // console.log(data.author);
+  })
+  .catch((err) => {
+    console.log("ERROR", err);
   });
