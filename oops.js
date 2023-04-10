@@ -203,9 +203,9 @@
 // console.log(tommy.speak());
 
 class Person {
-  constructor(name, species) {
-    this.name = name;
-    this.species = species;
+  constructor(nameVal, speciesVal) {
+    this.name = nameVal;
+    this.species = speciesVal;
     this.mammal = true;
   }
 
@@ -243,6 +243,68 @@ class Instructor extends Person {
 }
 
 var instructor1 = new Instructor("Avi", "Human", "F3");
-console.log(student1.speak());
+console.log(instructor1);
+// console.log(student1.speak());
 console.log(instructor1.speak());
-console.log(instructor1.speakAtHome());
+// console.log(instructor1.speakAtHome());
+
+class GrandParent {
+  constructor() {
+    this.generation = 3;
+  }
+}
+
+class Parent extends GrandParent {
+  constructor(surname) {
+    super();
+    this.surname = surname;
+  }
+  speak() {
+    return "parent is speaking";
+  }
+}
+
+class Child extends Parent {
+  constructor(firstname, surname) {
+    super(surname);
+    this.firstname = firstname;
+  }
+  speak() {
+    return "child is speaking";
+  }
+  parentSpeak() {
+    return super.speak();
+  }
+}
+
+var me = new Child("Avi", "Vashishta");
+
+// me.firstname;
+// me.surname;
+
+console.log("ME", me.generation);
+
+// class sham {
+//   constructor() {
+//     this.name = "sham";
+//   }
+
+//   speak() {
+//     console.log(this.name + " speaks.");
+//   }
+// }
+
+// class ram extends sham {
+//   constructor() {
+//     super();
+//     this.name2 = "ram";
+//   }
+
+//   speak() {
+//     super.speak();
+//     console.log(this.name2 + " speaks louder.");
+//   }
+// }
+
+// let r = new ram();
+// r.speak();
