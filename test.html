@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Calculator</title>
+  </head>
+  <body>
+    <label for="num1">Enter number 1:</label>
+    <input type="number" id="num1" name="num1" /><br /><br />
+
+    <label for="num2">Enter number 2:</label>
+    <input type="number" id="num2" name="num2" /><br /><br />
+
+    <label for="operator">Select an operator:</label>
+    <select id="operator" name="operator">
+      <option value="">--Select--</option>
+      <option value="+">Addition (+)</option>
+      <option value="-">Subtraction (-)</option>
+      <option value="*">Multiplication (*)</option>
+      <option value="/">Division (/)</option></select
+    ><br /><br />
+
+    <button onclick="performOperations()">Calculate</button>
+
+    <p id="result">Result is :</p>
+
+    <script src="script-test.js"></script>
+  </body>
+</html>

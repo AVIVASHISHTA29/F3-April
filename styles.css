@@ -2,3 +2,15 @@
   background-color: #000;
   color: #fff;
 } */
+
+#hamburger {
+  margin-top: 1rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  display: none;
+}
+
+#hamburger a {
+  color: #fff;
+}

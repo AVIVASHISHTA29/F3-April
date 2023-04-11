@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html id="my-html">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,21 @@
   <body>
     <h1 id="heading1" class="heading">Hello World</h1>
     <h2 id="heading2" class="heading">Bye World</h2>
-    <button onclick="helloWorldFnc()">Click Me</button>
+    <!-- <button onclick="submitEmail()">Click Me</button> -->
+
+    <div id="hamburger">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#search"><li>Search</li></a>
+        <a href="#profile"><li>Profile</li></a>
+      </ul>
+    </div>
+
+    <input type="text" placeholder="Email" id="my-email-input" />
+    <input type="text" placeholder="Password" id="my-pass-input" />
+
+    <button onclick="login()">Login</button>
+
     <!-- <script src="./oops.js" async defer></script> -->
     <!-- <script src="./oopsContd.js" async defer></script> -->
     <!-- <script src="./callback.js" async defer></script> -->
