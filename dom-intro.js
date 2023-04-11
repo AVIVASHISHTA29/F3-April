@@ -50,8 +50,14 @@
 // console.log("Children", document.body.children);
 
 // Select Elements with certain functions
-var myHeading = document.getElementById("heading1");
 
+// var myHeading = document.getElementById("heading1");
+var myHeading = document.querySelector("h1#heading1.heading");
+// var myHeadings = document.querySelector(".heading");
+// var myHeadings = document.querySelectorAll(".heading");
+
+// querySelector == querySelectorAll[0]
+console.log(myHeading);
 // Problem statement -> Why?
 // I might want to style my element.
 // I might want to access it -> access its inner values or inner content
