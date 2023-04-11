@@ -88,6 +88,8 @@ var myHeading = document.getElementById("heading1");
 //   "background-color:pink;font-size:55px;border:2px dashed green;color:white;";
 // text-transform -> textTransform
 
+var myPTag = document.getElementById("myPTag");
+
 function login() {
   // var myEmailInput = document.getElementById("my-email-input");
   // var myPassInput = document.getElementById("my-pass-input");
@@ -96,14 +98,20 @@ function login() {
   var userEmailVal = document.getElementById("my-email-input").value;
   var passEmailVal = document.getElementById("my-pass-input").value;
 
-  var userInput = {
-    email: userEmailVal,
-    password: passEmailVal,
-  };
+  var maskPass = "XXXX" + passEmailVal.slice(-1);
+  // var userInput = {
+  //   email: userEmailVal,
+  //   password: passEmailVal,
+  // };
 
-  console.log("userInput...", userInput);
+  // console.log("userInput...", userInput);
 
   // DOES LOGIN FUNCTIONAL
+
+  myPTag.innerText = `Email Enterred By User is ${userEmailVal} & Password enterred is ${maskPass}`;
 }
 
 // A task to create a calculator
+
+console.log(myPTag);
+console.log(myPTag.innerText);
