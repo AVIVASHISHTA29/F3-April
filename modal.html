@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Modal</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Hello World How are you</h1>
+    <button onclick="openModal()">Open Modal</button>
+    <!-- A div, which is fixed on the screen, it is on top of all the content of the screen and is positioned in the middle of the screen aswell. -->
+    <div class="modal-container" id="modal-container-id">
+      <div class="modal-content" onclick="closeModal()">
+        Hi this is my modal content
+      </div>
+    </div>
+
+    <script src="./modal.js" async defer></script>
+  </body>
+</html>
