@@ -33,18 +33,28 @@ console.log("Dom Continued...");
 //   console.log("Mouse Up");
 // });
 
-function login() {
-  var myEmailVal = document.getElementById("my-email-input").value;
-  var myPassVal = document.getElementById("my-pass-input").value;
-  console.log(myEmailVal, myPassVal);
-}
+// function login() {
+//   var myEmailVal = document.getElementById("my-email-input").value;
+//   var myPassVal = document.getElementById("my-pass-input").value;
+//   console.log(myEmailVal, myPassVal);
+// }
 
-var loginBtn = document.getElementById("login-btn");
-loginBtn.addEventListener("click", login);
+// var loginBtn = document.getElementById("login-btn");
+// loginBtn.addEventListener("click", login);
 
 //  What if I want to console.log value that the user is inputting at that instant
 
-var myEmailInput = document.getElementById("my-email-input");
-myEmailInput.addEventListener("change", () => {
-  console.log(myEmailInput.value);
-});
+// var myEmailInput = document.getElementById("my-email-input");
+// myEmailInput.addEventListener("change", () => {
+//   console.log(myEmailInput.value);
+// });
+
+// let myPTag = document.getElementById("my-p-tag");
+// Shows whatever text is visible to the user
+// console.log(myPTag.innerText);
+// myPTag.innerText = "Hi ";
+// Get whatever text content is inside an element,
+// console.log(myPTag.textContent);
+
+// console.log(myPTag.innerHTML);
+// myPTag.textContent = "Hi2";
