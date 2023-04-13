@@ -22,7 +22,7 @@ function appendElements() {
   listItem.setAttribute("id", `my-id-${count}`);
   listItem.setAttribute("title", `my-title-${count}`);
   listItem.setAttribute("class", `list-item`);
-
+  listItem.setAttribute("onclick", `removeItem("my-id-${count}")`);
   // listItem.removeAttribute("class");
   // listItem.classList.add("123");
 
@@ -46,3 +46,11 @@ function appendElements() {
 
 // var newElement = document.createElement("div");
 // console.log(newElement);
+
+// document.getElementById("list").removeChild(document.getElementById("my-id-2"));
+
+function removeItem(id) {
+  console.log("ID", id);
+  let itemToBeRemoved = document.getElementById(id);
+  document.getElementById("list").removeChild(itemToBeRemoved);
+}
