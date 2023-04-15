@@ -8,15 +8,17 @@ console.log("fetching data");
 
 // inbuilt function that returns a promise which resolves into data
 
-fetch("https://dummyjson.com/products/1")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log("DATA", data);
-    // console.log(data.quote);
-    // console.log(data.author);
-  })
-  .catch((err) => {
-    console.log("ERROR", err);
-  });
+// fetch("https://dummyjson.com/products/1")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log("DATA", data);
+//     // console.log(data.quote);
+//     // console.log(data.author);
+//   })
+//   .catch((err) => {
+//     console.log("ERROR", err);
+//   });
+
+// document.body.addChild

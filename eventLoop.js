@@ -2,8 +2,19 @@ console.log(1);
 console.log(2);
 console.log(3);
 
-function hi() {
-  console.log("Hi");
-}
+setTimeout(() => console.log("HI"), 0);
 
-document.getElementById("btn").addEventListener("click", hi);
+// fetch("https://dummyjson.com/products/1")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log("DATA", data);
+//     // console.log(data.quote);
+//     // console.log(data.author);
+//   })
+//   .catch((err) => {
+//     console.log("ERROR", err);
+//   });
+
+let name = "Avi";
