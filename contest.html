@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Employees</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="maincontainer">
+      <h2>New Employees</h2>
+
+      <div class="inputs">
+        <div class="namecont">
+          <label for="name">Enter Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="professioncont">
+          <label for="profession">Enter Profession</label>
+          <input type="text" name="profession" id="profession" />
+        </div>
+        <div class="agecont">
+          <label for="age">Enter Age</label>
+          <input type="number" name="age" id="age" />
+        </div>
+      </div>
+
+      <button id="adduser">Add User</button>
+
+      <p class="status-msg">
+        Error : Please Make sure All the fields are filled before adding in an
+        employee !
+      </p>
+
+      <p>Added Employees</p>
+
+      <div class="emp-li-container">You have 0 employees</div>
+    </div>
+
+    <script src="./contest1.js"></script>
+  </body>
+</html>
