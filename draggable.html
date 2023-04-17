@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #div1 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Drag the W3Schools image into the rectangle:</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <img
+      id="drag1"
+      src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ"
+      draggable="true"
+      ondragstart="dragStart(event)"
+      width="336"
+      height="69"
+    />
+    <script src="./draggable-script.js"></script>
+  </body>
+</html>
