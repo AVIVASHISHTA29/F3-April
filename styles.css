@@ -1,8 +1,3 @@
-/* body {
-  background-color: #000;
-  color: #fff;
-} */
-
 #hamburger {
   margin-top: 1rem;
   background-color: #000;
@@ -39,11 +34,6 @@
 }
 
 @keyframes rotateLine {
-}
-
-body {
-  margin: 0;
-  background-color: black;
 }
 
 .maincontainer {
