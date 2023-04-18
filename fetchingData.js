@@ -8,26 +8,26 @@ console.log("fetching data");
 
 // inbuilt function that returns a promise which resolves into data
 
-// fetch(url, { method: "GET" })
-//   .then((response) => {
-//     console.log("Resonse object", response);
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log("DATA", data);
-//     let quotesArr = data.quotes;
-//     console.log("QUOTES", quotesArr);
+fetch("https://dummyjson.com/quotes/1", { method: "GET" })
+  .then((response) => {
+    console.log("Resonse object", response);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("DATA", data);
+    let quotesArr = data.quotes;
+    console.log("QUOTES", quotesArr);
 
-//     quotesArr.forEach((data) => {
-//       document.getElementById("my-div").innerHTML += `
-//         <h2>${data.id} - ${data.author}</h2>
-//         <p>${data.quote}</p>
-//     `;
-//     });
-//   })
-//   .catch((err) => {
-//     console.log("ERROR", err);
-//   });
+    quotesArr.forEach((data) => {
+      document.getElementById("my-div").innerHTML += `
+        <h2>${data.id} - ${data.author}</h2>
+        <p>${data.quote}</p>
+    `;
+    });
+  })
+  .catch((err) => {
+    console.log("ERROR", err);
+  });
 
 // fetch("url")
 //   .then((response) => {
@@ -61,20 +61,20 @@ console.log("fetching data");
 //   .then((data) => console.log(data));
 
 // update
-let url = "https://dummyjson.com/products/1";
+// let url = "https://dummyjson.com/products/1";
 
-let options = {
-  method: "PUT" /* or PATCH */,
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    title: "Avi",
-    price: 10000,
-  }),
-};
+// let options = {
+//   method: "PUT" /* or PATCH */,
+//   headers: { "Content-Type": "application/json" },
+//   body: JSON.stringify({
+//     title: "Avi",
+//     price: 10000,
+//   }),
+// };
 
-fetch(url, options)
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
 // var obj = '{"name":"avi","id":1}';
 // console.log(obj);
