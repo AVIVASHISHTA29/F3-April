@@ -18,13 +18,14 @@
 var email = document.getElementById("email-input");
 var pass = document.getElementById("pass-input");
 
-if (localStorage.getItem("email") && localStorage.getItem("pass")) {
+if (localStorage.getItem("user")) {
+  var myUser = JSON.parse(localStorage.getItem("user"));
   email.style.display = "none";
   pass.style.display = "none";
   document.getElementById("btn").style.display = "none";
   var heading = document.createElement("h1");
   heading.innerHTML = `
-    WELCOME BACK - ${localStorage.getItem("email")}
+    WELCOME BACK - ${myUser.email}
     `;
   document.body.appendChild(heading);
 }
@@ -32,13 +33,19 @@ if (localStorage.getItem("email") && localStorage.getItem("pass")) {
 document.getElementById("btn").addEventListener("click", () => {
   var emailVal = email.value;
   var passVal = pass.value;
-  localStorage.setItem("email", emailVal);
-  localStorage.setItem("pass", passVal);
+  //   localStorage.setItem("email", emailVal);
+  //   localStorage.setItem("pass", passVal);
+  var user = {
+    email: emailVal,
+    pass: passVal,
+  };
+  localStorage.setItem("user", JSON.stringify(user));
   location.reload();
 });
 
 document.getElementById("logout-btn").addEventListener("click", () => {
-  localStorage.removeItem("email");
-  localStorage.removeItem("pass");
+  //   localStorage.removeItem("email");
+  //   localStorage.removeItem("pass");
+  localStorage.removeItem("user");
   location.reload();
 });
