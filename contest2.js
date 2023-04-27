@@ -1,6 +1,7 @@
 let lat;
 let long;
 let API_KEY = "1c18bdc3e52a15f56b3af6951038e572";
+
 document.getElementById("fetch_data").addEventListener("click", () => {
   // get the lat and long
   if (navigator.geolocation) {

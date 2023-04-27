@@ -1,0 +1,25 @@
+.new-card {
+  display: flex;
+  width: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  border: 1px solid #e3e3e3;
+  padding: 0.5rem;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.info p {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
